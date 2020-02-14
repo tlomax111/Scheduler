@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://kit.fontawesome.com/afe73243d4.js" crossorigin="anonymous"></script>
     <title>Work Day Scheduler</title>
 </head>
 
@@ -17,62 +18,60 @@
     <header class="jumbotron">
         <h1 class="display-3">Work Day Scheduler</h1>
         <p class="lead">A simple calendar app for scheduling your work day</p>
-        <p id="currentDay" class="lead"></p>
+        <h2 class="mx-auto" style="width: 200px;">Today Is:</h2>
+        <p class="mx-auto" style="width: 500px;" id="currentDay" class="lead">Date/Time</p>
     </header>
-    <div class="container" class="d-flex p-2 border">
-        <div class="row" class="bg-success text-white">
+    <div class="container" class="border border-primary">
+        <div class="row">
             <div id="timeCol1" class="col-2" class="text-justify">9am</div>
-            <input id="textCol1" type="text" placeholder="Add a task..." class="col-6"></input>
-            <div id="saveCol1"></div>
-            <button onclick= "" id="saveBtn">Save</button>
+            <input id="textCol1" type="text" placeholder="Add a task..." class="col-8"></input>
+            <!-- <button onclick= "" id="saveBtn">Save</button> -->
+            <button class="fas fa-lock" id="saveBtn"></button>
         </div>
         <div class="row">
             <div id="timeCol2" class="col-2">10am</div>
-            <input id="textCol2" type="text" placeholder="Add a task..." class="col-6"></input>
-            <div id="saveCol2"></div>
-            <button id="saveBtn2">Save</button>
+            <input id="textCol2" type="text" placeholder="Add a task..." class="col-8"></input>  
+            <button class="fas fa-lock" id="saveBtn"></button>
         </div>
         <div class="row">
             <div id="timeCol3" class="col-2" class="p-3">11am</div>
-            <input id="textCol3" type="text" placeholder="Add a task..." class="col-6"></input>
-            <div id="saveCol3"></div>
-            <button id="saveBtn3">Save</button>
+            <input id="textCol3" type="text" placeholder="Add a task..." class="col-8"></input>
+            <button class="fas fa-lock" id="saveBtn"></button>
         </div>
         <div class="row">
             <div id="timeCol4" class="col-2" class="bg-danger text-white">12pm</div>
-            <input id="textCol4" type="text" placeholder="Add a task..." class="col-6"></input>
-            <div id="saveCol4"></div>
-            <button id="saveBtn4">Save</button>
+            <input id="textCol4" type="text" placeholder="Add a task..." class="col-8"></input> 
+            <button class="fas fa-lock" id="saveBtn"></button>
         </div>
         <div class="row">
             <div id="timeCol5" class="col-2">1pm</div>
-            <input id="textCol5" type="text" placeholder="Add a task..." class="col-6"></input>
+            <input id="textCol5" type="text" placeholder="Add a task..." class="col-8"></input>
             <div id="saveCol5"></div>
-            <button id="saveBtn5">Save</button>
+            <button class="fas fa-lock" id="saveBtn"></button>
         </div>
         <div class="row">
             <div id="timeCol5" class="col-2">2pm</div>
-            <input id="textCol6" type="text" placeholder="Add a task..." class="col-6"></input>
+            <input id="textCol6" type="text" placeholder="Add a task..." class="col-8"></input>
             <div id="saveCol5"></div>
-            <button id="saveBtn6">Save</button>
+            <button class="fas fa-lock" id="saveBtn"></button>
         </div>
         <div class="row">
             <div id="timeCol7" class="col-2">3pm</div>
-            <input id="textCol7" type="text" placeholder="Add a task..." class="col-6"></input>
+            <input id="textCol7" type="text" placeholder="Add a task..." class="col-8"></input>
             <div id="saveCol7"></div>
-            <button id="saveBtn7">Save</button>
+            <button class="fas fa-lock" id="saveBtn"></button>
         </div>
         <div class="row">
             <div id="timeCo8l" class="col-2">4pm</div>
-            <input id="textCol8" type="text" placeholder="Add a task..." class="col-6"></input>
+            <input id="textCol8" type="text" placeholder="Add a task..." class="col-8"class="p-3 mb-2 bg-primary text-white"></input>
             <div id="saveCol8"></div>
-            <button id="saveBtn8">Save</button>
+            <button class="fas fa-lock" id="saveBtn"></button>
         </div>
-        <div class="row">
+        <div class="row" class="future">
             <div id="timeCol9" class="col-2">5pm</div>
-            <input id="textCol9" type="text" placeholder="Add a task..." class="col-6"></input>
+            <input id="textCol9" type="text" placeholder="Add a task..." class="col-8"></input>
             <div id="saveCol9"></div>
-            <button id="saveBtn9">Save</button>
+            <button class="fas fa-lock" id="saveBtn"></button>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
